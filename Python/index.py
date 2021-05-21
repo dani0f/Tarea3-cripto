@@ -9,8 +9,9 @@ app = Flask(__name__)
 # routes
 @app.route('/')
 def Index():
-    data = b"secret" #Aqui va el mensaje
     varKey='llave'   #Aqui va la llave
+    varData="secret" #Aqui va el mensaje
+    data=varData.encode('utf-8')
     key=varKey.encode('utf-8')
     cipher = Blowfish.new(key, Blowfish.MODE_ECB)#Blowfish ECB recibe solo llave como parametrro
     ct_bytes = cipher.encrypt(pad(data, Blowfish.block_size))#Se encripta el mensaje con la llave
