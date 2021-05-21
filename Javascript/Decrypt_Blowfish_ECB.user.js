@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Decrypt_Blowfish_ECB
-// @version      2.1
+// @version      3
 // @description  test of interoperability between python and javascript for Blowfish ECB algorithm
 // @author       Daniela Moreno
 // @require      https://gist.githubusercontent.com/aylarov/08eff1bfccb7e0e87a2fef0df766f01c/raw/9c6d8ed3dbb6bafc76fb3c5a6bc5722a41f1f497/ECB_Blowfish.js
