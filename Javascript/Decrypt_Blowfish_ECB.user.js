@@ -12,7 +12,7 @@ var div= document.getElementById("msg_encrypted")
 var msgEncrypted=div.innerHTML
 var result = blowfish.decrypt(msgEncrypted, key, {cipherMode: 0, outputType: 0});
 div.innerHTML = result
-
+//Hola prueba de auto-update
 
 
 
