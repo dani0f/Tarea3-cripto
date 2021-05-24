@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Decrypt_Blowfish_ECB
-// @version      4.2
+// @version      4.3
 // @description  test of interoperability between python and javascript for Blowfish ECB algorithm
 // @author       Daniela Moreno
 // @require      https://gist.githubusercontent.com/aylarov/08eff1bfccb7e0e87a2fef0df766f01c/raw/9c6d8ed3dbb6bafc76fb3c5a6bc5722a41f1f497/ECB_Blowfish.js
@@ -11,7 +11,7 @@
 // ==/UserScript==
 var key = 'llave'
 var div= document.getElementById("msg_encrypted")
-var msgEncrypted=div.value
+var msgEncrypted=div.attr('data-value');
 var result = blowfish.decrypt(msgEncrypted, key, {cipherMode: 0, outputType: 0});
 div.innerHTML = result
 
