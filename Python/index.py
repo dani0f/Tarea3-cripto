@@ -18,6 +18,5 @@ def Index():
     ct = b64encode(ct_bytes).decode('utf-8')
     return render_template('index.html', hash = ct) #resultado es hash en base64
 
-
 if __name__ == '__main__':
     app.run(debug=True)
